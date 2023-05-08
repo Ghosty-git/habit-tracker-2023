@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "1074763221682-j6uf6gc5qqqjn89hcpeaqtukb8pa7lcr.apps.googleusercontent.com",
+          "client_id": "1074763221682-ucqn8ntfv6f6bh6dvhceu10lrrrkrocv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.habit_app_2023",
+            "certificate_hash": "6e1a319b5f0b1db0dbbb60ccb59bcede1dc759f9"
+          }
+        },
+        {
+          "client_id": "1074763221682-41o283v35o4959cl4gonb5g2qs3eevmt.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,8 +35,15 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1074763221682-j6uf6gc5qqqjn89hcpeaqtukb8pa7lcr.apps.googleusercontent.com",
+              "client_id": "1074763221682-41o283v35o4959cl4gonb5g2qs3eevmt.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1074763221682-b8i4t3t800d29behf4ot4eo21pmptu3e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.habitApp2023"
+              }
             }
           ]
         }

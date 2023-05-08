@@ -67,6 +67,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1074763221682',
     projectId: 'habit-2023',
     storageBucket: 'habit-2023.appspot.com',
+    androidClientId: '1074763221682-ucqn8ntfv6f6bh6dvhceu10lrrrkrocv.apps.googleusercontent.com',
     iosClientId: '1074763221682-b8i4t3t800d29behf4ot4eo21pmptu3e.apps.googleusercontent.com',
     iosBundleId: 'com.example.habitApp2023',
   );
@@ -77,6 +78,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1074763221682',
     projectId: 'habit-2023',
     storageBucket: 'habit-2023.appspot.com',
+    androidClientId: '1074763221682-ucqn8ntfv6f6bh6dvhceu10lrrrkrocv.apps.googleusercontent.com',
     iosClientId: '1074763221682-b8i4t3t800d29behf4ot4eo21pmptu3e.apps.googleusercontent.com',
     iosBundleId: 'com.example.habitApp2023',
   );

@@ -65,6 +65,22 @@ class FirebaseAuthMethods {
     }
   }
 
+  // GOOGLE AUTH
+
+  Future<UserCredential> signInWithGoogle() async {
+    final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+
+    final GoogleSignInAuthentication? googleAuth =
+        await googleUser?.authentication;
+
+    final credential = GoogleAuthProvider.credential(
+      accessToken: googleAuth?.accessToken,
+      idToken: googleAuth?.idToken,
+    );
+
+    return await FirebaseAuth.instance.signInWithCredential(credential);
+  }
+
   // RESET PASSWORD
 
   Future<void> resetPassword({
@@ -86,19 +102,5 @@ class FirebaseAuthMethods {
     } on FirebaseAuthException catch (e) {
       Exceptions.showFlushbar(e.message.toString(), context: context);
     }
-  }
-}
-
-class GoogleSignInMethod {
-  signInWithGoogle() async {
-    final GoogleSignInAccount? gUser = await GoogleSignIn().signIn();
-
-    final GoogleSignInAuthentication gAuth = await gUser!.authentication;
-
-    final credential = GoogleAuthProvider.credential(
-      accessToken: gAuth.accessToken,
-      idToken: gAuth.idToken,
-    );
-    return await FirebaseAuth.instance.signInWithCredential(credential);
   }
 }
