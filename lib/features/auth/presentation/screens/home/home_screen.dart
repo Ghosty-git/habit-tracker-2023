@@ -38,19 +38,17 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               children: [
                 Container(
-                  height: 110.h,
+                  height: 50.h,
                 ),
                 Container(
                   width: 350.w,
                   height: 189.h,
                   decoration: BoxDecoration(
                       color: Color(0xffFFA450),
-                      borderRadius: BorderRadius.circular(7.r)),
+                      borderRadius: BorderRadius.circular(7.r),),
                   alignment: Alignment.center,
-                  child: Text(
-                    "Хуй его че делать с баннером",
-                    style: TextStyle(fontFamily: "Nunito"),
-                  ),
+                  child: Text("Типа баннер"),
+                 
                 ),
                 Container(
                   height: 22.h,
@@ -58,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.red,
+                        color: Color(0xffE5E5E5),
                         borderRadius: BorderRadius.circular(12.r)),
                     child: Padding(
                       padding: EdgeInsets.symmetric(
@@ -94,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       width: 335.w,
                                       height: 58.h,
                                       decoration:
-                                          BoxDecoration(color: Colors.blue),
+                                          BoxDecoration(color: Colors.white),
                                       child: Padding(
                                         padding: EdgeInsets.symmetric(
                                             horizontal: 13.h),
